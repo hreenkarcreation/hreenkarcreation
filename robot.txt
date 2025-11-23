@@ -1,3 +1,85 @@
+# robots.txt for Hreenkar Creation & Kambeshwar Agencies
+# Generated: January 2025
+# Website: https://hreenkarcreation.github.io/hreenkarcreation/
+
+# Allow all search engines to crawl the website
 User-agent: *
+Allow: /hreenkarcreation/
+Allow: /hreenkarcreation/assets/
+Allow: /hreenkarcreation/*.html
+Allow: /hreenkarcreation/*.webp
+Allow: /hreenkarcreation/*.jpg
+Allow: /hreenkarcreation/*.png
+Allow: /hreenkarcreation/css/
+Allow: /hreenkarcreation/js/
+
+# Disallow admin and private sections
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+Disallow: /*.pdf$
+Disallow: /backup/
+Disallow: /*?*sort=
+Disallow: /*?*filter=
+
+# Allow specific search engines
+User-agent: Googlebot
+Allow: /hreenkarcreation/
+
+User-agent: Bingbot
+Allow: /hreenkarcreation/
+
+User-agent: Slurp
+Allow: /hreenkarcreation/
+
+User-agent: DuckDuckBot
+Allow: /hreenkarcreation/
+
+# Crawl delay for all bots
+User-agent: *
+Crawl-delay: 1
+
+# Request rate
+User-agent: *
+Request-rate: 1/10s
+
+# Sitemap location - PRIMARY
+Sitemap: https://hreenkarcreation.github.io/hreenkarcreation/sitemap.xml
+
+# Additional sitemaps (for future use)
+Sitemap: https://hreenkarcreation.github.io/hreenkarcreation/sitemap-products.xml
+Sitemap: https://hreenkarcreation.github.io/hreenkarcreation/sitemap-locations.xml
+Sitemap: https://hreenkarcreation.github.io/hreenkarcreation/sitemap-blog.xml
+
+# Block bad bots and scrapers
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: MojeekBot
+Disallow: /
+
+# Allow search engine image crawlers
+User-agent: Googlebot-Image
+Allow: /hreenkarcreation/
+
+User-agent: Bingbot-Image
+Allow: /hreenkarcreation/
+
+User-agent: Googlebot-Video
+Allow: /hreenkarcreation/
+
+# GitHub Pages specific rules
+User-agent: GitHub-Cron
 Allow: /
-Sitemap: https://hemantborana.github.io/hreenkarcreation/sitemap.xml
+
+User-agent: gitmirror
+Allow: /
